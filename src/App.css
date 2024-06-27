@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -11,7 +11,6 @@ h1 {
   color: #333;
 }
 
-/* TaskManagerApp Styles */
 .task-manager-app {
   width: 90%;
   margin: 0 auto;
@@ -23,7 +22,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* TaskForm Styles */
 .task-form {
   margin: 20px 0;
   display: flex;
@@ -58,13 +56,11 @@ h1 {
   background-color: #0056b3;
 }
 
-/* TaskList Styles */
 .task-list {
   list-style-type: none;
   padding: 0;
 }
 
-/* TaskItem Styles */
 .task-item {
   display: flex;
   justify-content: space-between;
@@ -121,7 +117,6 @@ h1 {
   color: white;
 }
 
-/* TaskFilter Styles */
 .task-filter {
   margin: 20px 0;
 }
@@ -144,10 +139,6 @@ h1 {
   font-weight: bold;
   border-bottom: 2px solid #000;
 }
-
-
-
-/* Add these styles to styles.css */
 
 .task-sort-filter {
   display: flex;

@@ -1,10 +1,10 @@
-import './App.css';
-import TaskManagerApp from './components/taskManagerApp';
+import "./App.css";
+import TaskManagerApp from "./components/taskManagerApp";
 
 function App() {
   return (
     <div className="App">
-     <TaskManagerApp/>
+      <TaskManagerApp />
     </div>
   );
 }
