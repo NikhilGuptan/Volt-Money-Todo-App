@@ -1,38 +1,146 @@
-.App {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+}
+
+/* TaskManagerApp Styles */
+.task-manager-app {
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-manager-app h1 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* TaskForm Styles */
+.task-form {
+  margin: 20px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form input,
+.task-form select {
+  width: calc(33% - 10px);
+}
+
+.task-form button {
+  width: calc(33% - 10px);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+/* TaskList Styles */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* TaskItem Styles */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task-item h3 {
+  margin: 0;
+}
+
+.task-item p {
+  margin: 0;
+}
+
+.task-item div {
+  display: flex;
+  gap: 10px;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  opacity: 0.8;
+}
+
+.task-item button:nth-child(1) {
+  background-color: #28a745;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item button:nth-child(2) {
+  background-color: #ffc107;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item button:nth-child(3) {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* TaskFilter Styles */
+.task-filter {
+  margin: 20px 0;
+}
+
+.task-filter button {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.task-filter button:hover {
+  background-color: #f1f1f1;
+}
+
+.task-filter .active {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
 }
