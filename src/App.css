@@ -144,3 +144,30 @@ h1 {
   font-weight: bold;
   border-bottom: 2px solid #000;
 }
+
+
+
+/* Add these styles to styles.css */
+
+.task-sort-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+}
+
+.sort-options label {
+  margin-right: 10px;
+}
+
+.sort-options select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
